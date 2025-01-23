@@ -1,0 +1,85 @@
+<section>
+  <main class="left">
+    <ul>
+      <li >
+        <div (click)="toggle()" class="gap"><i class="fa-solid fa-caret-right"></i>
+          <p>პროდუქტები</p>
+        </div>
+        <ul [ngClass]="{'hidden': !Showdiv}"> 
+          <li>
+            <div (click)="toggle1()"  *ngIf="Showdiv" class="gap hide">
+              <i  class="fa-solid fa-sort-down"></i>
+              <p>აგრარური</p>
+            </div>
+            <ul *ngIf="showdiv1" [ngClass]="{'hidden': !showdiv1}" class="hidden">
+              <div class="gap"><i class="fa-solid fa-caret-right"></i>
+                <li>
+                  <p>ხილი</p>
+                </li>
+              </div>
+              <div class="gap"><i class="fa-solid fa-caret-right"></i>
+                <li>
+                  <p>ბოსტნეული</p>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div (click)="toggle2()" class="gap"><i class="fa-solid fa-caret-right"></i>
+          <p>კვება</p>
+        </div>
+
+        <ul [ngClass]="{'hidden': !showdiv2}" *ngIf="showdiv2" class="hidden">
+          <li>
+            <div  class="gap"><i class="fa-solid fa-caret-right"></i>
+              <p>სასმელები</p>
+            </div>
+          </li>
+          <li>
+            <div class="gap"><i class="fa-solid fa-caret-right"></i>
+              <p>კერძები</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </main>
+  <main class="right">
+    <table style="width: 100%;">
+      <tr>
+        <th>
+          <div class="center">
+            <p>კოდი</p><i class="fa-solid fa-sort-up"></i>
+          </div>
+        </th>
+        <th>
+          <div class="center">
+            <p>კოდი</p><i class="fa-solid fa-sort"></i>
+          </div>
+        </th>
+        <th>
+          <div class="center">
+            <p>კოდი</p><i class="fa-solid fa-sort"></i>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <td>0001</td>
+        <td>ვაშლი</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>0002</td>
+        <td>მსხალი</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>0003</td>
+        <td>საზამთრო</td>
+        <td>4</td>
+      </tr>
+    </table>
+  </main>
+</section>

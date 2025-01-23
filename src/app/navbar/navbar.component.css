@@ -1,0 +1,46 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+.fa-plus{
+    color: rgb(55, 199, 55);
+}
+.fa-pen-to-square{
+    color: pink;
+}
+.fa-x{
+    color: red;
+}
+.editForGroups{
+    display: flex;
+    gap: 8px;
+}
+.editForProducts{
+    display: flex;
+    gap: 8px;
+}
+.diagrama{
+    display: flex;
+    gap: 10px;
+}
+i{
+    width: 25px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.btn{
+    font-weight: bolder;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(238, 0, 255);
+    cursor: pointer;
+}

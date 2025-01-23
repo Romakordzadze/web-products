@@ -1,0 +1,20 @@
+<header >
+    <main><div class="editForGroups">
+         <i class="fa-solid fa-plus"></i>
+         <i class="fa-solid fa-pen-to-square"></i>
+         <i class="fa-solid fa-x"></i>
+     </div>
+     <div class="editForProducts">
+         <i (click)="openWindow()" class="fa-solid fa-plus"></i>
+         <i class="fa-solid fa-pen-to-square"></i>
+         <i class="fa-solid fa-x"></i>
+     </div>
+ </main>
+     <div class="diagrama">
+         <button class="btn" (click)="showDiagramWindow()">დიაგრამა</button>
+         <i class="fa-solid fa-share"></i>
+     </div>
+ </header>
+ <app-window (newShowWindow) = "updateShowWindow($event)" *ngIf = "showwindow"></app-window>
+ <app-diagram (newShowDiagram) = "updateShowDiagram($event)"   *ngIf = "showDiagram"></app-diagram>
+ 

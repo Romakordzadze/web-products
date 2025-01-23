@@ -1,0 +1,44 @@
+section{
+    margin-top: 5px;
+    display: flex;
+    gap: 6px;
+}
+.left{
+    border: 3px solid black;
+    width: 300px;
+    height: 100vh;
+}
+.gap{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 20px; 
+  }
+
+  ul li {
+    margin: 5px 0;
+  }
+  ul li::before {
+    margin-right: 5px;
+  }
+  .right{
+    width: 100%;
+  }
+table{
+    width: 100%;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+table, th, td {
+    border:2px solid black;
+}
+p{
+  cursor: pointer;
+}

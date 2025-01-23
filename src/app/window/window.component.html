@@ -1,0 +1,49 @@
+<section >
+    <main>
+        <div  class="title">
+            <p>პროდუქტი</p>
+            <i (click)="close()" class="fa-solid fa-x"></i>
+        </div>
+        <div class="product">
+            <div class="saveDelete">
+                <button class="save">Save</button>
+                <button  class="delete">Delete</button>
+            </div>
+            <div class="inputs">
+                <form action="">
+                    <div class="code lbl">
+                        <label for="code">კოდი</label>
+                        <input type="text">
+                    </div>
+                    <div class="productName lbl">
+                        <label for="productName">დასახელება</label>
+                        <input type="text">
+                    </div>
+                    <div class="price lbl">
+                        <label for="price">ფასი</label>
+                        <input type="text">
+                    </div>
+                    <div class="country lbl">
+                        <label for="country">ქვეყანა</label>
+                        <select name="" id="">
+                            <option value="">საქართველო</option>
+                            <option value="">საფრანგეთი</option>
+                            <option value="">გერმანია</option>
+                            <option value="">შვედეთი</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <div class="fromDate">
+                            <label for="fromDate">თარიღიდან</label>
+                            <input type="date">
+                        </div>
+                        <div class="toDate">
+                            <label for="toDate">თარიღამდე</label>
+                            <input type="date"> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</section>
