@@ -6,22 +6,22 @@
         </div>
         <div class="product">
             <div class="saveDelete">
-                <button class="save">Save</button>
+                <button (click)="saveInfo()" class="save">Save</button>
                 <button  class="delete">Delete</button>
             </div>
             <div class="inputs">
                 <form action="">
                     <div class="code lbl">
                         <label for="code">კოდი</label>
-                        <input type="text">
+                        <input type="text" [(ngModel)] = "code"  [ngModelOptions]="{standalone: true}">
                     </div>
                     <div class="productName lbl">
                         <label for="productName">დასახელება</label>
-                        <input type="text">
+                        <input type="text" [(ngModel)] = "productName"  [ngModelOptions]="{standalone: true}">
                     </div>
                     <div class="price lbl">
                         <label for="price">ფასი</label>
-                        <input type="text">
+                        <input type="text" [(ngModel)] = "price"  [ngModelOptions]="{standalone: true}">
                     </div>
                     <div class="country lbl">
                         <label for="country">ქვეყანა</label>

@@ -3,6 +3,11 @@ section{
     width: 80%;
     position: fixed;
 }
+.diagramPosition{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
 .close i{
   width: 25px;
   line-height: 22px;

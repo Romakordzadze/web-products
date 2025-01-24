@@ -56,16 +56,28 @@
         </th>
         <th>
           <div class="center">
-            <p>კოდი</p><i class="fa-solid fa-sort"></i>
+            <p>დასახელება</p><i class="fa-solid fa-sort"></i>
           </div>
         </th>
         <th>
           <div class="center">
-            <p>კოდი</p><i class="fa-solid fa-sort"></i>
+            <p>ფასი</p><i class="fa-solid fa-sort"></i>
           </div>
         </th>
       </tr>
-      <tr>
+      @for (item of array; track item) {
+        <tr>
+          <td>{{item.code}}</td>
+          <td>{{item.productName}}</td>
+          <td>{{item.price}}</td>
+        </tr>
+      }
+      <tr *ngFor="let item of tableData">
+        <td>{{ item.codeName }}</td>
+        <td>{{ item.productName }}</td>
+        <td>{{ item.price }}</td>
+      </tr>
+      <!-- <tr>
         <td>0001</td>
         <td>ვაშლი</td>
         <td>4</td>
@@ -79,7 +91,7 @@
         <td>0003</td>
         <td>საზამთრო</td>
         <td>4</td>
-      </tr>
+      </tr> -->
     </table>
   </main>
 </section>
