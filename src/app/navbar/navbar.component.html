@@ -6,13 +6,13 @@
      </div>
      <div class="editForProducts">
          <i (click)="openWindow()" class="fa-solid fa-plus"></i>
-         <i class="fa-solid fa-pen-to-square"></i>
-         <i class="fa-solid fa-x"></i>
+         <i (click)="openWindow()" class="fa-solid fa-pen-to-square"></i>
+         <i (click)="openWindow()" class="fa-solid fa-x"></i>
      </div>
  </main>
      <div class="diagrama">
          <button class="btn" (click)="showDiagramWindow()">დიაგრამა</button>
-         <i class="fa-solid fa-share"></i>
+         <i (click)="showDiagramWindow()" class="fa-solid fa-share"></i>
      </div>
  </header>
  <app-window (newShowWindow) = "updateShowWindow($event)" *ngIf = "showwindow"></app-window>
